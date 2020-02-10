@@ -1,0 +1,26 @@
+var supertest = require("supertest");
+const assert = require ("assert");
+const{expect} = require ("chai");
+const chai require("chai");
+
+const api = supertest ("http://automationpractice.xn--com-9o0a/")
+function getProduct (){
+return api.get('/')
+.set('Content-Type','application/json')
+.set('Authorization', 'bearer: {}')
+.query('params')
+}
+ const testCase {
+ positive {
+            getItem : "product can be shown",
+ }
+ negative {
+            none : "product can not be shown",
+ }
+ }
+describe ('getProduct')==> {
+  it ('getProduct, (testCase, getItem)'), async() =>{
+  const response = await getProduct ();
+  expect (response.status)to.equal(200)
+  }
+  });
